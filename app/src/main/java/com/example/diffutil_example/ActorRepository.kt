@@ -3,11 +3,16 @@ package com.example.diffutil_example
 class ActorRepository {
 
     private val actors = listOf(
-        Actor(1, "Jack Nicholson", 10, 1937, "https://images.squarespace-cdn.com/content/v1/5ae4ecccfcf7fd2d8744ace5/1525209348827-ZW06N5A58G7UYVTV1Y6N/jacknicholson300.jpg"),
-        Actor(2, "Marlon Brando", 9, 1924, "https://m.media-amazon.com/images/M/MV5BMTg3MDYyMDE5OF5BMl5BanBnXkFtZTcwNjgyNTEzNA@@._V1_.jpg"),
-        Actor(3, "Robert De Niro", 8, 1943, "https://cdn.britannica.com/00/213300-050-ADF31CD9/American-actor-Robert-De-Niro-2019.jpg?w=400&h=300&c=crop"),
-        Actor(4, "Al Pacino", 7, 1940, "https://cdn.britannica.com/45/196745-050-66D0F975/Al-Pacino-Scarface-Brian-De-Palma.jpg"),
-        Actor(5, "Tom Hanks", 4, 1956,"https://upload.wikimedia.org/wikipedia/commons/a/a9/Tom_Hanks_TIFF_2019.jpg"),
+        Actor(1, "Dhanush",10,1983,"https://yt3.ggpht.com/-kCbe78awmHuDymoRGk54ArvL3YRcKOlKRh-5ppGe9t-WQ9012gGwe8oFGz5vGjF6WhMHsuyng=s900-c-k-c0x00ffffff-no-rj"),
+        Actor(2,"Jitendra Kumar", 8, 1990,"https://img.huffingtonpost.com/asset/5eb5e8dd300000a916155ad4.png?cache=xCjq3u8UoU&ops=scalefit_720_noupscale"),
+        Actor(3,"Randeep Hooda", 6, 1976,"https://filmfare.wwmindia.com/thumb/content/2022/aug/randeephooda71660893336.jpg?width=1200&height=900"),
+        Actor(4,"Akshay Kumar", 6, 1967,"https://static.toiimg.com/thumb/msid-64015092,width-800,height-600,resizemode-75,imgsize-65473,pt-32,y_pad-40/64015092.jpg"),
+        Actor(5,"Vicky Kaushal", 7, 1988, "https://st1.bollywoodlife.com/wp-content/uploads/2019/05/Vicky-Kaushal.jpg"),
+        Actor(6,"Manoj Bajpayee", 9, 1969,"https://filmfare.wwmindia.com/content/2021/may/manojbajpayee21621842970.jpg"),
+        Actor(7,"Pankaj Tripathi", 9, 1976,"https://timesofindia.indiatimes.com/thumb/msid-64529565,width-1200,height-900,resizemode-4/.jpg"),
+        Actor(8,"Nawazuddin Siddiqui", 10, 1974,"https://www.easterneye.biz/wp-content/uploads/2021/02/GettyImages-1188188374-scaled.jpg"),
+        Actor(9,"Rajkummar Rao", 8, 1984, "https://static.toiimg.com/photo/msid-78168943/78168943.jpg"),
+        Actor(10,"Ayushmann Khurrana", 7, 1984, "https://cdn.i-scmp.com/sites/default/files/d8/images/methode/2020/01/09/83d2af80-31fc-11ea-9400-58350050ee52_972x_180521.jpg")
     )
 
     val actorsSortedByRating: List<Actor>
