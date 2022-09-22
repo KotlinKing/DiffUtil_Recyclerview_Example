@@ -11,7 +11,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
 
     private val repository = ActorRepository()
-    private val actorAdapter = ActorAdapter(repository.actorsSortedByRating)
+    private val actorAdapter = ActorsAdapter()
 
     private lateinit var binding: ActivityMainBinding
 
@@ -25,16 +25,18 @@ class MainActivity : AppCompatActivity() {
             adapter = actorAdapter
         }
 
+        actorAdapter.submitList(repository.actorsSortedByName)
+
         binding.btnSortByName.setOnClickListener {
-            actorAdapter.swap(repository.actorsSortedByName)
+            actorAdapter.submitList(repository.actorsSortedByName)
         }
 
         binding.btnSortByRatings.setOnClickListener {
-            actorAdapter.swap(repository.actorsSortedByRating)
+            actorAdapter.submitList(repository.actorsSortedByRating)
         }
 
         binding.btnSortByYOB.setOnClickListener {
-            actorAdapter.swap(repository.actorsSortedByYearOfBirth)
+            actorAdapter.submitList(repository.actorsSortedByYearOfBirth)
         }
     }
 }
